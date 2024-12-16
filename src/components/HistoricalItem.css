@@ -1,0 +1,25 @@
+/* App.css or a dedicated CSS file for your components */
+.historical-items-list {
+    padding: 20px;
+  }
+  
+  .historical-items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Space between items */
+  }
+  
+  .historical-item {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    max-width: 300px;
+    text-align: center;
+  }
+  
+  .historical-item img {
+    width: 100%; /* Makes image responsive */
+    height: auto; /* Maintains aspect ratio */
+    border-radius: 5px;
+  }
+  

@@ -1,0 +1,90 @@
+.categories-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    font-size: 25px;
+  }
+  
+  .cards-wrapper {
+    width: 100%;
+    overflow-x: auto; /* Enable horizontal scrolling */
+    overflow-y: hidden; /* Hide vertical scrolling */
+    white-space: nowrap; /* Ensure cards stay in a single line */
+    display: flex;
+    justify-content: center; /* Center the cards */
+    scroll-behavior: smooth; /* Smooth scrolling effect */
+    height: 320px; /* Adjust height to fit the cards */
+  }
+  
+  .cards-container {
+    display: inline-flex; /* Ensure cards are in a single row */
+    gap: 30px; /* Space between cards */
+  }
+  
+  .card {
+    width: 210px;
+    height: 300px; /* Adjust the card height if needed */
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    flex: 0 0 auto; /* Prevent cards from shrinking or growing */
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.5);
+  }
+  
+  .card img {
+    width: 100%;
+    height: 72%;
+    object-fit: cover;
+    border-radius: 15px 15px 0 0;
+  }
+  
+  .card h3 {
+    margin: 10px;
+    text-align: center;
+    font-size: 20px;
+    color: #212121;
+  }
+  
+  .card p {
+    padding: 0 10px;
+    text-align: center;
+    font-size: 14px;
+    color: #666;
+  }
+  
+  /* Hide scrollbar */
+  .cards-wrapper {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+  
+  .cards-wrapper::-webkit-scrollbar {
+    display: none;  /* Chrome, Safari, Opera */
+  }
+  
+  .spotlights-section {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+  }
+  
+  .spotlight-image {
+    width: 300px; /* Adjust width as needed */
+    height: 100px; /* Lower height for rectangular shape */
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+  }
+  
+  .spotlight-image:hover {
+    transform: scale(1.05);
+  }
+  
+  

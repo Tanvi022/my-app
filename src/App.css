@@ -1,38 +1,131 @@
-.App {
+/* App.css */
+
+/* Global Styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+}
+
+.app {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+/* Header Styles */
+.header {
+  background-color: #3f51b5;
   color: white;
+  padding: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.header h1 {
+  margin: 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.language-login {
+  margin-top: 10px;
+}
+
+.language-login button {
+  margin: 0 5px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: white;
+  color: #3f51b5;
+  cursor: pointer;
+}
+
+/* Main Content Styles */
+.main {
+  padding: 20px;
+  position: relative;
+}
+
+/* Background Image */
+.background-img {
+  width: 100%;
+  height: auto;
+  max-height: 300px;
+  object-fit: cover;
+}
+
+/* Search Section Styles */
+.search-section {
+  margin: 20px 0;
+}
+
+.search-section input {
+  padding: 10px;
+  width: 300px;
+  border: 2px solid #3f51b5;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+/* Card Styles */
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.card, .category-card, .heritage-card {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  width: 200px;
+  overflow: hidden;
+  transition: transform 0.3s;
+}
+
+.card:hover, .category-card:hover, .heritage-card:hover {
+  transform: scale(1.05);
+}
+
+.card img, .category-card img, .heritage-card img {
+  width: 100%;
+  height: auto;
+}
+
+.card h3, .category-card h3, .heritage-card h3 {
+  margin: 10px 0 5px;
+  font-size: 1.2em;
+}
+
+.card p, .category-card p, .heritage-card p {
+  margin: 0 10px 10px;
+  color: #555;
+}
+
+/* Category Styles */
+.categories {
+  margin-top: 40px;
+}
+
+.category-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* Banner Styles */
+.banner img {
+  width: 100%;
+  height: auto;
+  margin-top: 20px;
+}
+
+/* Heritage Sites Styles */
+.heritage-sites {
+  margin-top: 40px;
+}
+
+.heritage-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
 }
